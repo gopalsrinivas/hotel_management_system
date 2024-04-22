@@ -5,6 +5,8 @@ import Header from './components/common/Header'
 import Footer from './components/common/Footer'
 import Bottom from './components/common/Bottom'
 
+import '../../styles/global.css'
+
 export const metadata = {
   title: 'Hotel Management System',
   description: 'Hotel Management System',
