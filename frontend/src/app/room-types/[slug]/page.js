@@ -33,21 +33,22 @@ export default function page() {
                             </div>
                             <div className="mb-2">
                                 <label htmlFor="" className="form-label"><strong>Total Guest</strong></label>
-                                <input type="number" className="form-control" />
+                                <input type="number" id="totalguest" name="totalguest" className="form-control" />
                             </div>
                             <div className="mb-2">
-                                <label htmlFor="" className="form-label"><strong>Check-In</strong></label>
-                                <input type="date" className="form-control" />
+                                <label htmlFor="check-in" className="form-label"><strong>Check-In</strong></label>
+                                <input type="text" id="check-in" name="check-in" className="form-control" placeholder="DD-MM-YYYY" />
                             </div>
                             <div className="mb-2">
-                                <label htmlFor="" className="form-label"><strong>Check-Out</strong></label>
-                                <input type="date" className="form-control" />
+                                <label htmlFor="check-out" className="form-label"><strong>Check-Out</strong></label>
+                                <input type="text" id="check-out" name="check-out" className="form-control" placeholder="DD-MM-YYYY"/>
                             </div>
-                             <button className="btn hms-bg-dark text-white text-center mt-4">Confirm Booking</button>
+                            
+                            <Link href="/checkout" className="btn hms-bg-dark text-white text-center mt-4">Confirm Booking</Link>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     );
