@@ -9,11 +9,11 @@ export default function Page({params}) {
     return (
         <section className="container my-5 text-center">
             {
-                slug=='success' && <PaymentSuccess />
+                slug==='success' && <PaymentSuccess />
             }
 
             {
-                slug=='failure' && <PaymentFailure />
+                slug==='failure' && <PaymentFailure />
             }
         </section>
     );
