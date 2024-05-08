@@ -11,6 +11,7 @@ export default function DashboardSideMenu() {
             <Link className={`list-group-item ${pathname === '/user/booking_history' ? 'hms-bg-normal' : ''}`} href="/user/booking_history">Booking History</Link>
             <Link className={`list-group-item ${pathname === '/user/payment_logs' ? 'hms-bg-normal' : ''}`} href="/user/payment_logs">Payment logs</Link>
             <Link className={`list-group-item ${pathname === '/user/update_profile' ? 'hms-bg-normal' : ''}`} href="/user/update_profile">Update Profile</Link>
+            <Link className={`list-group-item ${pathname === '/user/change_password' ? 'hms-bg-normal' : ''}`} href="/user/change_password">Change Password</Link>
             <Link className="list-group-item text-danger" href="#">Logout</Link>
         </div>
     );

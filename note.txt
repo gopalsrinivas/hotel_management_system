@@ -1,0 +1,6 @@
+frontend:
+-------------
+npm install bootstrap
+npm install react-responsive-carousel
+npm install --save font-awesome
+npm install --save chart.js react-chartjs-2
