@@ -17,7 +17,7 @@ export default function page() {
                                 <thead className="hms-bg-normal">
                                     <tr>
                                         <th>S.No</th>
-                                        <th>Booking Date</th>
+                                        <th>Date</th>
                                         <th>Booking Details</th>
                                         <th>Invoice</th>
                                         <th>Action</th>
@@ -26,22 +26,39 @@ export default function page() {
                                 <tbody>
                                     <tr>
                                         <td>1.</td>
-                                        <td>20-4-2024</td>
+                                        <td>20-5-2024</td>
                                         <td>
-                                            <p className="m-0 fw-bold hms-color">2 Rooms</p>
-                                            <p className="m-0 fw-bold hms-color">20-04-2024 To 25-04-2024</p>
-                                            <p className="m-0 fw-bold hms-color">2 Guest</p>
+                                            <p className="m-0 fw-bold hms-color">Birthday Party</p>
+                                            <p className="m-0 fw-bold hms-color">50 Guest</p>
                                         </td>
                                         <td>
                                             <p className="m-0 fw-bold hms-color">
-                                                <Link href='#'>HMS-001</Link>
+                                                <Link href='#'>HMS_EVT-001</Link>
                                             </p>
                                             <p className="m-0 fw-bold hms-color">RS. 15,000 /-</p>
                                             <p className="m-0 fw-bold hms-color text-danger">Due</p>
                                         </td>
                                         <td>
                                             <Link href="#" className="btn btn-sm btn-outline-danger ms-1">Cancel</Link>
-                                            <Link href="#" className="btn btn-sm btn-outline-dark ms-1">Guest Detail</Link>
+                                            <Link href="#" className="btn btn-sm hms-bg-dark ms-1">Pay Now</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>20-5-2024</td>
+                                        <td>
+                                            <p className="m-0 fw-bold hms-color">Birthday Party</p>
+                                            <p className="m-0 fw-bold hms-color">50 Guest</p>
+                                        </td>
+                                        <td>
+                                            <p className="m-0 fw-bold hms-color">
+                                                <Link href='#'>HMS_EVT-001</Link>
+                                            </p>
+                                            <p className="m-0 fw-bold hms-color">RS. 15,000 /-</p>
+                                            <p className="m-0 fw-bold hms-color text-success">Paid</p>
+                                        </td>
+                                        <td>
+                                            <Link href="#" className="btn btn-sm btn-success ms-1">Support</Link>
                                         </td>
                                     </tr>
                                 </tbody>

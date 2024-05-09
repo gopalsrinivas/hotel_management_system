@@ -25,17 +25,14 @@ export default function Header() {
                             <a className="nav-link text-white fw-bold" href="#">Services</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-white fw-bold" href="#">About</a>
+                            <a className="nav-link text-white fw-bold" href="/about">About</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="nav-link text-white fw-bold" href="#">Contact</a>
+                            <a className="nav-link text-white fw-bold" href="/contact">Contact</a>
                         </li>
                         <li className="nav-item me-3">
-                            <a className="btn btn-sm mt-1 text-white fw-bold hms-bg-dark" href="#">Book Event</a>
+                            <Link className="btn btn-sm mt-1 text-white fw-bold hms-bg-dark" href="/book_event">Book Event</Link>
                         </li>
-                        {/* <li className="nav-item">
-                            <a className="btn btn-danger btn-sm mt-1" href="#">Book Room</a>
-                        </li> */}
                     </ul>
                 </div>
             </div>
