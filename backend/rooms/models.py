@@ -2,12 +2,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
+
 class RoomType(models.Model):
     title = models.CharField(max_length=200, unique=True)
     detail = models.JSONField(null=True)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
     class Meta:
         verbose_name = "1. Room Type"
         verbose_name_plural = "1. Room Types"
@@ -21,6 +23,7 @@ class Room(models.Model):
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+
     class Meta:
         verbose_name = "2. Room"
         verbose_name_plural = "2. Rooms"
@@ -45,3 +48,33 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.room.room_type.title}-{self.room.room_no} - {self.user}"
+class Payment(models.Model):  # Changed 'payment' to 'Payment'
+    booking = models.ForeignKey(Booking, on_delete=models.CASCADE)
+    txt_id = models.TextField()
+    total_amt = models.DecimalField(max_digits=10, decimal_places=2)
+    response_data = models.TextField()
+    payment_date = models.DateTimeField(auto_now_add=True)
+    class Meta:
+        verbose_name = "4. Payment"
+        verbose_name_plural = "4. Payments"
+
+class Gallery(models.Model):
+    image = models.ImageField(upload_to='g_imgs/')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = "5. Gallery"
+        verbose_name_plural = "5. Gallery"
+
+class RoomImage(models.Model):
+    room_type = models.ForeignKey(RoomType, on_delete=models.CASCADE,null=True)
+    image = models.ImageField(upload_to='room_type_imgs/')
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        verbose_name = "6. Room Images"
+        verbose_name_plural = "6. Room Images"
