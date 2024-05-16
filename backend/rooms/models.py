@@ -30,6 +30,7 @@ class Room(models.Model):
 
     def __str__(self):
         return f"{self.room_no} - {self.room_type}"
+    
 class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
