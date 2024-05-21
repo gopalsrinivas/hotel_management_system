@@ -14,7 +14,7 @@ export default function Footer() {
                         <h4 className='text-white'>About</h4>
                         <p><a href='#' className='text-white text-decoration-none'>Company</a></p>
                         <p><a href='#' className='text-white text-decoration-none'>History</a></p>
-                        <p><a href='#' className='text-white text-decoration-none'>Career</a></p>
+                        <p><a href='/career' className='text-white text-decoration-none'>Career</a></p>
                     </div>
                     <div className='col-3'>
                         <h4 className='text-white'>Contact</h4>
